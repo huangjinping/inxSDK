@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onFaceBook"
+        android:text="onFaceBook" />
+
+    <Button
+        android:id="@+id/btn_firebaseRemoteConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onFirebase"
+        android:text="onFirebase"
+        android:visibility="visible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onGetAllData"
+        android:text="onGetAllData"
+        android:visibility="visible" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openFace"
+        android:text="openFace"
+        android:visibility="visible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onLocation"
+        android:text="onLocation"
+        android:visibility="visible" />
+
+</LinearLayout>

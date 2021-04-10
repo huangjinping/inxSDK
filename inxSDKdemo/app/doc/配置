@@ -1,0 +1,9 @@
+applicationId=com.loan.credit.tala.branch.fast.efectivo.mexico.moneymoney
+    signingConfigs {
+        key {
+            keyAlias 'okaymoney'
+            keyPassword 'okaymoney2021'
+            storeFile file('okaymoney.jks')
+            storePassword 'okaymoney2021'
+        }
+    }

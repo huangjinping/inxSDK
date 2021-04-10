@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="inxSDKdemo/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/inxSDKdemo.iml" filepath="$PROJECT_DIR$/.idea/modules/inxSDKdemo.iml" group="inxSDKdemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/liveness/liveness.iml" filepath="$PROJECT_DIR$/.idea/modules/liveness/liveness.iml" group="inxSDKdemo/liveness" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/mylibrary/mylibrary.iml" group="inxSDKdemo/mylibrary" />
+    </modules>
+  </component>
+</project>
