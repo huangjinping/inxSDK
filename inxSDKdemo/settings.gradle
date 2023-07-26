@@ -1,4 +1,0 @@
-include ':liveness'
-include ':mylibrary'
-include ':app'
-rootProject.name = "inxSDKdemo"

@@ -1,0 +1,111 @@
+package cdax.naindex.datalib;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.text.TextUtils;
+
+import androidx.core.app.ActivityCompat;
+
+import java.io.UnsupportedEncodingException;
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class DataUtil {
+
+    public static String filterText(String text) {
+        if (text == null) {
+            return "";
+        }
+        return TextUtils.isEmpty(text) ? "" : text;
+    }
+
+    static boolean haveSelfPermission(Context paramContext, String paramString) {
+        if (paramContext == null) {
+            return false;
+        }
+        if (TextUtils.isEmpty(paramString)) {
+            return false;
+        }
+
+        return ActivityCompat.checkSelfPermission(paramContext, paramString) == 0;
+    }
+
+
+    public static boolean checkPermissionRationale(Activity context, String[] perm) {
+        for (String item : perm) {
+            if (ActivityCompat.shouldShowRequestPermissionRationale(context,
+                    item)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    public boolean checkPermission(Context context, String[] perm) {
+        for (String item : perm) {
+            if (ActivityCompat.checkSelfPermission(context,
+                    item) != PackageManager.PERMISSION_GRANTED) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean checkGrantResults(int[] grantResults) {
+        for (int code : grantResults) {
+            if (code != PackageManager.PERMISSION_GRANTED) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+    private static final String CHINESE_PATTERN = "[一-龥]{2,}";
+
+
+    private static boolean match(String pattern, String str) {
+        Pattern p = Pattern.compile(pattern);
+        Matcher m = p.matcher(str);
+        boolean id = m.find();
+        return id;
+    }
+
+    public static boolean isValidChinaChar(String paramString) {
+        return paramString != null && match("[一-龥]{2,}", paramString);
+    }
+
+    public static String filterOffUtf8Mb4(String text) throws UnsupportedEncodingException {
+        byte[] bytes = text.getBytes(StandardCharsets.UTF_8);
+        ByteBuffer buffer = ByteBuffer.allocate(bytes.length);
+        int i = 0;
+
+        while(i < bytes.length) {
+            short b = (short)bytes[i];
+            if (b > 0) {
+                buffer.put(bytes[i++]);
+            } else {
+                b = (short)(b + 256);
+                if ((b ^ 192) >> 4 == 0) {
+                    buffer.put(bytes, i, 2);
+                    i += 2;
+                } else if ((b ^ 224) >> 4 == 0) {
+                    buffer.put(bytes, i, 3);
+                    i += 3;
+                } else if ((b ^ 240) >> 4 == 0) {
+                    i += 4;
+                } else {
+                    buffer.put(bytes[i++]);
+                }
+            }
+        }
+
+        buffer.flip();
+        return new String(buffer.array(), StandardCharsets.UTF_8);
+    }
+
+}

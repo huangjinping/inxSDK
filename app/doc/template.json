@@ -1,0 +1,215 @@
+{
+  "hardware": {
+    "device_name": "vivo",
+    "sdk_version": 27,
+    "release": "8.1.0",
+    "model": "vivo 1811",
+    "brand": "vivo",
+    "physical_size": "5.9545608651799995",
+    "serial_number": "",
+    "production_date": 1530616310000,
+    "device_height": 1920,
+    "device_width": 1080,
+    "board": "hi6250",
+    "cpu_num": "",
+    "imei1": "",
+    "imei2": ""
+  },
+  "storage": {
+    "ram_total_size": "1922654208",
+    "ram_usable_size": "622514176",
+    "memory_card_size": "8876863488",
+    "memory_card_usable_size": "622514176",
+    "memory_card_size_use": "8140955648",
+    "internal_storage_total": "9506009088",
+    "internal_storage_usable": "1365053440",
+    "contain_sd": 0,
+    "extra_sd": 1,
+    "ram_total_pre_size": ""
+  },
+  "general_data": {
+    "gaid": "3a919a55-fe6a-44b1-a310-88e0db1a379f",
+    "and_id": "14d404b466fc191c",
+    "phone_type": "GSM",
+    "mac": "C4:E3:9F:73:14:F5",
+    "locale_iso_3_language": "ind",
+    "locale_display_language": "Indonesia",
+    "locale_iso_3_country": "IDN",
+    "imei": "866988048960073",
+    "phone_number": "",
+    "network_operator_name": "TELKOMSEL",
+    "network_type": "wifi",
+    "time_zone_id": "Asia/Jakarta",
+    "language": "in",
+    "is_using_proxy_port": false,
+    "is_using_vpn": false,
+    "is_usb_debug": false,
+    "elapsedRealtime": 394093510,
+    "currentSystemTime": 1604287409700,
+    "uptimeMillis": 4905696,
+    "sensor_list": [
+      {
+        "type": "1",
+        "name": "LSM6DSL Accelerometer",
+        "version": "1",
+        "vendor": "STM",
+        "maxRange": "39.2266",
+        "minDelay": "10000",
+        "power": "0.13",
+        "resolution": "0.0011971008"
+      }
+    ]
+  },
+  "other_data": {
+    "root_jailbreak": "0",
+    "last_boot_time": "1577860791460",
+    "keyboard": "1",
+    "simulator": "0",
+    "dbm": "-125",
+    "total_pre_boot_time": "",
+    "total_pre_boot_time_wake": ""
+  },
+  "application": [
+    {
+      "app_name": "Cashwagon",
+      "package": "ph.cashwagon.mobile",
+      "in_time": 1576917484686,
+      "version_name": "1.45.1",
+      "app_type": 0,
+      "version_code": 489,
+      "flags": 550026820,
+      "up_time": 1576917484686
+    }
+  ],
+  "contact": [
+    {
+      "last_time_contacted": 0,
+      "number": "+917500815814",
+      "contact_display_name": "Tipin Misra",
+      "times_contacted": "0",
+      "up_time": 1598266060593,
+      "lastUsedTime": 0,
+      "source": "device",
+      "group": []
+    }
+  ],
+  "network": {
+    "current_wifi": {
+      "bssid": "20:e8:82:dd:4b:5e",
+      "ssid": "INDIHOME",
+      "mac": "02:00:00:00:00:00",
+      "name": "rong360_guest"
+    },
+    "IP": "192.168.1.9",
+    "wifi_count": "10",
+    "configured_wifi": [
+      {
+        "bssid": "INDIHOME",
+        "name": "INDIHOME",
+        "ssid": "20:e8:82:dd:4b:5e",
+        "mac": "20:e8:82:dd:4b:5e"
+      }
+    ]
+  },
+  "sms": [
+    {
+      "phone": "+911234567890",
+      "content": "test",
+      "time": 1599042197925,
+      "type": 1,
+      "_id": 848,
+      "read": 0,
+      "seen": 1,
+      "status": -1,
+      "person": 0,
+      "sent_date": 0
+    }
+  ],
+  "location": {
+    "gps_address_city": "Kabupaten Jember",
+    "gps_address_province": "Jawa Timur",
+    "gps_address_street": "Jl. Kopral Soetomo No.288, Krajan, Karanganyar,Ambulu,KabupatenJember,JawaTimur68172,Indonesia",
+    "gps": {
+      "latitude": "-8.3191566666667",
+      "longitude": "113.61120833333"
+    }
+  },
+  "battery_status": {
+    "is_charging": "0",
+    "battery_pct": "0.14",
+    "is_usb_charge": "0",
+    "is_ac_charge": "0"
+  },
+  "public_ip": {
+    "first_ip": "125.167.84.150",
+    "second_ip": "127.0.0.1"
+  },
+  "albs": {
+    "albs": {
+      "albs": {
+        "dataList": [
+          {
+            "name": "aadhar.png",
+            "author": "samsung",
+            "height": "1440",
+            "width": "1920",
+            "date": "1970/01/01 05:30:00",
+            "createTime": "2020/10/20 14:46:40",
+            "take_time": "1604081442",
+            "save_time": "1604081442",
+            "model": "GT-S5360",
+            "orientation": "1",
+            "x_resolution": "720000\/10000",
+            "y_resolution": "720000\/10000",
+            "gps_altitude": "",
+            "gps_processing_method": "",
+            "lens_make": "",
+            "lens_model": "",
+            "focal_length": "",
+            "flash": "",
+            "software": "Adobe Photoshop CS6 (Windows)",
+            "latitude": "-8.3191566666667",
+            "longitude": "113.61120833333"
+          }
+        ]
+      }
+    }
+  },
+  "audio_external": 123,
+  "audio_internal": 10,
+  "images_internal": 5,
+  "images_external": 12,
+  "video_internal": 12,
+  "video_external": 12,
+  "download_files": 12,
+  "contact_group": 10,
+  "build_id": "",
+  "build_name": "1.0.0",
+  "package_name": "com.test.app",
+  "create_time": 1528795328,
+  "account": [
+    {
+      "name": "WhatsApp",
+      "type": "com.whatsapp"
+    }
+  ],
+  "call": [
+    {
+      "id": 1671,
+      "name": "13803103067",
+      "number": "13803103067",
+      "date": 1637072313053,
+      "type": 2,
+      "duration": 202,
+      "turnon": 1
+    }
+  ],
+  "calendar": [
+    {
+      "eventTitle": "（北京时间19点）",
+      "description": "（北京时间19点）",
+      "startTime": "2020-03-31 20:00:00",
+      "endTime": "2020-03-31 20:00:00"
+    }
+  ]
+}

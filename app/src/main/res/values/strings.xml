@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">UnView</string>
+    <string name="facebook_app_id">856483418490712</string>
+    <string name="fb_login_protocol_scheme">fb655051081819796</string>
+    <string name="living_accessKey">cd30feb3eeee0f8c</string>
+    <string name="living_secretKey">f08167bd2a493cd3</string>
+    <string name="living_again">Living  fail,please living again</string>
+    <string name="fb_client_token" translatable="false">b7d94b8a0f8844886f8deac9489a5b2e</string>
+
+<!--    <string name="fb_authority" translatable="false">com.facebook.app.FacebookContentProvider856483418490712</string>-->
+
+
+<!--    <string name="com.google.firebase.crashlytics.mapping_file_id" translatable="false" tools:ignore="UnusedResources,TypographyDashes">00000000000000000000000000000000</string>-->
+
+
+</resources>

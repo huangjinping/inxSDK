@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <Button
+                  android:id="@+id/button2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:onClick="onFaceBook"
+                  android:text="faceBOOK打点"
+                  android:textAllCaps="false" />
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:onClick="onFaceBook1"
+                  android:text="faceBOOK打点1"
+                  android:textAllCaps="false" />
+
+          </LinearLayout>
+
+
+          <Button
+              android:id="@+id/btn_firebaseRemoteConfig"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="onFirebase"
+              android:text="Firebase打点"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="onGetAllData"
+              android:text="App风控json获取"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="openFace"
+              android:text="openFace  人脸sdk"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="onLocation"
+              android:text="google定位"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="onLogs"
+              android:text="getLogs"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="onCrashlytics"
+              android:text="onCrashlytics"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="onCrashlytics1"
+              android:text="onCrashlytics1"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="getPhonenumber"
+              android:text="getPhonenumber"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="addCalendar"
+              android:text="addCalendar"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="getContracts"
+              android:text="getContracts"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="android13"
+              android:text="android13"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="getApplists"
+              android:text="getApplists"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="getStorage"
+              android:text="getStorage"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="getImageList"
+              android:text="getImageList"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="readPrivilegedPhoneState"
+              android:text="readPrivilegedPhoneState"
+              android:textAllCaps="false"
+              android:visibility="visible" />
+
+
+
+
+          <com.facebook.login.widget.LoginButton
+              android:id="@+id/login_button"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="30dp"
+              android:layout_marginBottom="30dp" />
+
+      </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+</LinearLayout>
